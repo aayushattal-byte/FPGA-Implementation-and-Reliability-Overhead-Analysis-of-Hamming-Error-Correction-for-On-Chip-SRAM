@@ -1,0 +1,7 @@
+[PASS] step (clean write/read)      : pass=1 sec=0 ded=0
+[PASS] inject 1 bit (bit 37)        : pass=0 sec=1 ded=0
+[PASS] step again (fresh word)      : pass=1 sec=0 ded=0
+[PASS] inject bit 10                : pass=0 sec=1 ded=0
+[PASS] inject bit 50 (2nd error)    : pass=0 sec=0 ded=1
+[VERDICT] PASS (0 board-level check(s) failed)
+tb/tb_top_ecc_demo.v:46: $finish called at 3450000 (1ps)

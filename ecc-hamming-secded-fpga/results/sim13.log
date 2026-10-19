@@ -1,0 +1,17 @@
+VCD info: dumpfile hamming_13_8.vcd opened for output.
+[PASS] Case 1: clean round trip, data_out=10110101
+[PASS] Case 2: single-bit error corrected, data_out=11001010
+[PASS] Case 3: double-bit error correctly flagged uncorrectable
+====================================================
+Case 4: exhaustive 3-bit-flip sweep, 286 combinations, data_in=10100110
+  error_correct=1, data CORRECT (lucky)         : 2
+  error_correct=1, data WRONG   (MISCORRECTED)  : 284
+  double_error=1   (caught, safely rejected)    : 0
+  no flags, data still correct (harmless)       : 0
+  no flags, data WRONG  (SILENT CORRUPTION)     : 0
+  Example miscorrection: flipping bits {0,1,2} -> error_correct=1 but data_out=10100111 (expected 10100110)
+====================================================
+--------------------------------------------------
+TOTAL (Cases 1-3): 3 passed, 0 failed
+--------------------------------------------------
+tb/tb_hamming_13_8.v:147: $finish called at 5945000 (1ps)

@@ -1,0 +1,29 @@
+[PASS] Test 1: plain round trip, data=deadbeef12345678
+[FAIL] Test 2: data=cafebabe0f0f0f0f sec=0 ded=0
+[FAIL] Test 3: expected ded=1, got sec=0 ded=0
+--------------------------------------------------
+Basic tests: 1 passed, 2 failed
+--------------------------------------------------
+  [CHECK-FAIL] n=1 trial 0: stored word differs in 0 bits (expected 1)
+  [trace] n=1 trial 0 addr=0 flipped bit 52
+  [CHECK-FAIL] n=1 trial 1: stored word differs in 0 bits (expected 1)
+  [trace] n=1 trial 1 addr=1 flipped bit 3
+  [CHECK-FAIL] n=1 trial 2: stored word differs in 0 bits (expected 1)
+[RESULT] flips=1 trials=200 corrected=0 detected=0 miscorrected=0 noflag_ok=200 noflag_wrong=0 injection_verified=0
+  [CHECK-FAIL] n=2 trial 0: stored word differs in 0 bits (expected 2)
+  [trace] n=2 trial 0 addr=0 flipped bits 59,71
+  [CHECK-FAIL] n=2 trial 1: stored word differs in 0 bits (expected 2)
+  [trace] n=2 trial 1 addr=1 flipped bits 35,56
+  [CHECK-FAIL] n=2 trial 2: stored word differs in 0 bits (expected 2)
+[RESULT] flips=2 trials=200 corrected=0 detected=0 miscorrected=0 noflag_ok=200 noflag_wrong=0 injection_verified=0
+  [CHECK-FAIL] n=3 trial 0: stored word differs in 0 bits (expected 3)
+  [trace] n=3 trial 0 addr=0 flipped bits 38,34,23
+  [CHECK-FAIL] n=3 trial 1: stored word differs in 0 bits (expected 3)
+  [trace] n=3 trial 1 addr=1 flipped bits 59,4,45
+  [CHECK-FAIL] n=3 trial 2: stored word differs in 0 bits (expected 3)
+[RESULT] flips=3 trials=200 corrected=0 detected=0 miscorrected=0 noflag_ok=200 noflag_wrong=0 injection_verified=0
+--------------------------------------------------
+Stimulus errors (X/Z addresses): 0
+[VERDICT] FAIL: 5 check(s) failed -- see log above
+--------------------------------------------------
+build/tb_mutant.v:227: $finish called at 66320000 (1ps)

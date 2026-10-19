@@ -1,0 +1,10 @@
+
+Hamming(13,8)  parity bits = 4+1  overhead = 62.5%
+  1-bit errors, exhaustive over     13 patterns: corrected_ok=    13  detected=     0  miscorrected=     0  no-flag-wrong=0  (syndrome out of range: 0)
+  2-bit errors, exhaustive over     78 patterns: corrected_ok=     0  detected=    78  miscorrected=     0  no-flag-wrong=0  (syndrome out of range: 15)
+  3-bit errors, exhaustive over    286 patterns: corrected_ok=     2  detected=     0  miscorrected=   284  no-flag-wrong=0  (syndrome out of range: 66)
+
+Hamming(72,64)  parity bits = 7+1  overhead = 12.5%
+  1-bit errors, exhaustive over     72 patterns: corrected_ok=    72  detected=     0  miscorrected=     0  no-flag-wrong=0  (syndrome out of range: 0)
+  2-bit errors, exhaustive over   2556 patterns: corrected_ok=     0  detected=  2556  miscorrected=     0  no-flag-wrong=0  (syndrome out of range: 448)
+  3-bit errors, exhaustive over  59640 patterns: corrected_ok=    15  detected=     0  miscorrected= 59625  no-flag-wrong=0  (syndrome out of range: 14336)
